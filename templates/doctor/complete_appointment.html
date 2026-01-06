@@ -26,7 +26,7 @@
             </div>
             <div class="card-body">
                 <form method="POST" action="{{ url_for('doctor.doctor_complete_appointment', appointment_id=appointment.id) }}">
-                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
                     <div class="mb-3">
                         <label for="diagnosis" class="form-label">Diagnosis *</label>
                         <textarea class="form-control" id="diagnosis" name="diagnosis" rows="4" required>{{ appointment.treatment.diagnosis if appointment.treatment else '' }}</textarea>

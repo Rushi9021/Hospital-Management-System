@@ -47,7 +47,7 @@
                             <form method="POST" action="{{ url_for('doctor.doctor_cancel_appointment', appointment_id=appointment.id) }}"
                                   style="display:inline;"
                                   onsubmit="return confirm('Are you sure?');">
-                                  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                                  <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
                                 <button type="submit" class="btn btn-sm btn-danger">
                                     <i class="fas fa-times"></i> Cancel
                                 </button>

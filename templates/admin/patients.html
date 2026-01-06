@@ -59,7 +59,7 @@
                             <form method="POST" action="{{ url_for('admin.admin_delete_patient', patient_id=patient.id) }}"
                                   style="display:inline;"
                                   onsubmit="return confirm('Are you sure you want to blacklist this patient?');">
-                                  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                                  <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
                                 <button type="submit" class="btn btn-sm btn-danger">
                                     <i class="fas fa-ban"></i> Blacklist
                                 </button>
