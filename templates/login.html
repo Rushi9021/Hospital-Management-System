@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Login - Hospital Management System{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center mt-5 pt-5">
+    <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+        <div class="text-center mb-4">
+            <i class="fas fa-hospital fs-1 text-white"></i>
+            <h3 class="text-white mt-2">Hospital Management System</h3>
+        </div>
+
+        <div class="card bg-dark border border-secondary rounded-3">
+            <div class="card-body p-4">
+                <h4 class="card-title text-white mb-4 text-center">Sign in to your account</h4>
+
+                <form method="POST" action="{{ url_for('login') }}">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+                    <div class="mb-3">
+                        <label for="username" class="form-label text-white-50 small">Username</label>
+                        <input type="text"
+                               class="form-control bg-black border-secondary text-white"
+                               id="username"
+                               name="username"
+                               required
+                               autofocus>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label text-white-50 small">Password</label>
+                        <input type="password"
+                               class="form-control bg-black border-secondary text-white"
+                               id="password"
+                               name="password"
+                               required>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100 py-2 fw-semibold">
+                        Sign in
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card bg-dark border border-secondary rounded-3 mt-3">
+            <div class="card-body p-3 text-center">
+                <span class="text-white-50">New to Hospital Management?</span>
+                <a href="{{ url_for('register') }}" class="text-decoration-none ms-1">Create an account</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

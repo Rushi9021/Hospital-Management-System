@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome - Hospital Management System{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center mt-5 pt-5">
+    <div class="col-12 col-md-10 col-lg-8">
+        <div class="text-center mb-5">
+            <h1 class="display-5 text-white fw-bold mb-3">Hospital Management System</h1>
+            <p class="lead text-white-50">Streamline hospital operations with our comprehensive management platform</p>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card bg-dark border border-secondary rounded-3 h-100">
+                    <div class="card-body text-center p-4">
+                        <h5 class="card-title text-white mb-3">For Doctors</h5>
+                        <p class="card-text text-white-50 small">Manage appointments, view patient records, and set your availability</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark border border-secondary rounded-3 h-100">
+                    <div class="card-body text-center p-4">
+                        <h5 class="card-title text-white mb-3">For Patients</h5>
+                        <p class="card-text text-white-50 small">Book appointments, view medical history, and manage your profile</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark border border-secondary rounded-3 h-100">
+                    <div class="card-body text-center p-4">
+                        <h5 class="card-title text-white mb-3">For Admins</h5>
+                        <p class="card-text text-white-50 small">Manage doctors, patients, departments, and system operations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="{{ url_for('login') }}" class="btn btn-primary px-4 py-2">
+                Sign in
+            </a>
+            <a href="{{ url_for('register') }}" class="btn btn-success px-4 py-2">
+                Create account
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
