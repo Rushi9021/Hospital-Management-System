@@ -16,7 +16,7 @@
                 <p class="text-center text-white-50 small mb-4">Register as a new patient</p>
 
                 <form method="POST" action="{{ url_for('register') }}">
-                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
 
                     <div class="row">
                         <div class="col-md-6 mb-3">

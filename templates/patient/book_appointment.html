@@ -29,7 +29,7 @@
             <div class="card-body">
                 {% if availabilities %}
                 <form method="POST" action="{{ url_for('patient.patient_book_appointment', doctor_id=doctor.id) }}">
-                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
                     <div class="mb-3">
                         <label for="appointment_date" class="form-label">Date *</label>
                         <select class="form-select" id="appointment_date" name="appointment_date" required>

@@ -11,7 +11,7 @@
         <div class="card">
             <div class="card-body">
                 <form method="POST" action="{{ url_for('admin.admin_edit_doctor', doctor_id=doctor.id) }}">
-                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="full_name" class="form-label">Full Name *</label>

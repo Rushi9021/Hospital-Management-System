@@ -15,7 +15,7 @@
                 <h4 class="card-title text-white mb-4 text-center">Sign in to your account</h4>
 
                 <form method="POST" action="{{ url_for('login') }}">
-                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
 
                     <div class="mb-3">
                         <label for="username" class="form-label text-white-50 small">Username</label>
