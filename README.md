@@ -3,6 +3,12 @@
 ## Overview
 A comprehensive web-based Hospital Management System built with Flask, SQLAlchemy, and Bootstrap. The system provides role-based access control for three types of users: Admins, Doctors, and Patients, enabling efficient management of appointments, medical records, and hospital operations.
 
+## 🚀 Deployed Application
+The project has been successfully deployed and is accessible online:
+
+**Live URL:**  
+👉 [https://hostpitalsystem.up.railway.app](https://hostpitalsystem.up.railway.app)
+
 ## Project Purpose
 This application helps hospitals manage patient records, doctor schedules, appointments, and treatment histories in a centralized, secure platform. It eliminates manual record-keeping and reduces scheduling conflicts while providing patients with easy access to their medical information.
 
